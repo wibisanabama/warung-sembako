@@ -1,7 +1,7 @@
 <aside class="sidebar">
     <div class="logo">
         <i class="fas fa-store"></i>
-        <span>Sembako<b>PRO</b></span>
+        <span><b>Raissa</b></span>
     </div>
     
     <nav class="nav-links">

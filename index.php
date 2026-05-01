@@ -17,7 +17,7 @@ $recent_transactions = $conn->query("SELECT * FROM transactions ORDER BY transac
     <header class="fade-in">
         <div>
             <h1>Dashboard</h1>
-            <p style="color: var(--text-muted)">Selamat datang di sistem manajemen Warung Sembako.</p>
+            <p style="color: var(--text-muted)">Selamat datang di sistem manajemen Raissa.</p>
         </div>
         <div class="user-profile">
             <div style="text-align: right">
