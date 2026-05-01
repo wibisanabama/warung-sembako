@@ -6,9 +6,10 @@
     --danger: #ef4444;
     --background: #f8fafc;
     --card-bg: rgba(255, 255, 255, 0.8);
-    --sidebar-bg: #1e293b;
-    --sidebar-text: #94a3b8;
-    --sidebar-active: #ffffff;
+    --sidebar-bg: #ffffff;
+    --sidebar-text: #64748b;
+    --sidebar-active: #1e293b;
+    --sidebar-logo: #1e293b;
     --text-main: #1e293b;
     --text-muted: #64748b;
     --border-color: #e2e8f0;
@@ -24,6 +25,10 @@
     --text-muted: #94a3b8;
     --border-color: #334155;
     --glass-border: rgba(255, 255, 255, 0.1);
+    --sidebar-bg: #1e293b;
+    --sidebar-text: #94a3b8;
+    --sidebar-active: #ffffff;
+    --sidebar-logo: #ffffff;
 }
 
 * {
@@ -54,12 +59,13 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 1000;
+    border-right: 1px solid var(--border-color);
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--sidebar-logo);
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
@@ -93,8 +99,8 @@ body {
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: var(--sidebar-active);
+    background-color: rgba(99, 102, 241, 0.05);
+    color: var(--primary);
 }
 
 .nav-link.active {
