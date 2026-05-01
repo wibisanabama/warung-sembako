@@ -1,2 +1,2 @@
-# warung-sembako
+# Warung Sembako
 PHP native project
