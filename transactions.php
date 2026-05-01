@@ -28,7 +28,6 @@ $result = $conn->query($query);
                         <th>ID Transaksi</th>
                         <th>Tanggal & Waktu</th>
                         <th>Total Pembayaran</th>
-                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -38,15 +37,11 @@ $result = $conn->query($query);
                                 <td>#TRX-<?= str_pad($row['id'], 5, '0', STR_PAD_LEFT) ?></td>
                                 <td><?= date('d M Y, H:i', strtotime($row['transaction_date'])) ?></td>
                                 <td style="font-weight: 600;">Rp <?= number_format($row['total_amount'], 0, ',', '.') ?></td>
-                                <td>
-                                    <button class="btn" style="padding: 0.4rem; color: var(--primary)"><i class="fas fa-eye"></i> Detail</button>
-                                    <button class="btn" style="padding: 0.4rem; color: var(--accent)"><i class="fas fa-print"></i> Cetak</button>
-                                </td>
                             </tr>
                         <?php endwhile; ?>
                     <?php else: ?>
                         <tr>
-                            <td colspan="4" style="text-align: center; color: var(--text-muted); padding: 3rem;">
+                            <td colspan="3" style="text-align: center; color: var(--text-muted); padding: 3rem;">
                                 <i class="fas fa-receipt" style="font-size: 3rem; opacity: 0.2; display: block; margin-bottom: 1rem;"></i>
                                 Belum ada riwayat transaksi.
                             </td>

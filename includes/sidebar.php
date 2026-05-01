@@ -31,10 +31,5 @@
         </div>
     </nav>
     
-    <div class="sidebar-footer">
-        <a href="#" id="theme-toggle" class="nav-link">
-            <i class="fas fa-moon"></i>
-            Dark Mode
-        </a>
-    </div>
+
 </aside>

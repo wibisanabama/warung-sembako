@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     <?php endif; ?>
 
-    <div class="card fade-in" style="max-width: 800px; animation-delay: 0.1s">
+    <div class="card fade-in" style="animation-delay: 0.1s">
         <form action="" method="POST">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                 <div class="form-group" style="grid-column: span 2;">

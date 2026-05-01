@@ -16,20 +16,11 @@
     --glass-border: rgba(255, 255, 255, 0.2);
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --btn-secondary: #e2e8f0;
+    --btn-secondary-text: #475569;
 }
 
-[data-theme="dark"] {
-    --background: #0f172a;
-    --card-bg: rgba(30, 41, 59, 0.8);
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --border-color: #334155;
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --sidebar-bg: #1e293b;
-    --sidebar-text: #94a3b8;
-    --sidebar-active: #ffffff;
-    --sidebar-logo: #ffffff;
-}
+
 
 * {
     margin: 0;
@@ -222,6 +213,12 @@ tr:last-child td {
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
+    background-color: var(--btn-secondary);
+    color: var(--btn-secondary-text);
+}
+
+.btn:hover {
+    filter: brightness(0.9);
 }
 
 .btn-primary {

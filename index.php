@@ -72,9 +72,7 @@ $recent_transactions = $conn->query("SELECT * FROM transactions ORDER BY transac
     <div class="card fade-in" style="animation-delay: 0.2s">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
             <h2 style="font-size: 1.25rem;">Transaksi Terbaru</h2>
-            <a href="transactions.php" class="btn btn-primary" style="font-size: 0.875rem;">
-                <i class="fas fa-plus"></i> Transaksi Baru
-            </a>
+
         </div>
         <div class="table-container">
             <table>
@@ -83,7 +81,6 @@ $recent_transactions = $conn->query("SELECT * FROM transactions ORDER BY transac
                         <th>ID</th>
                         <th>Waktu</th>
                         <th>Total Amount</th>
-                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -93,14 +90,11 @@ $recent_transactions = $conn->query("SELECT * FROM transactions ORDER BY transac
                                 <td>#<?= str_pad($row['id'], 5, '0', STR_PAD_LEFT) ?></td>
                                 <td><?= date('d M Y, H:i', strtotime($row['transaction_date'])) ?></td>
                                 <td style="font-weight: 600;">Rp <?= number_format($row['total_amount'], 0, ',', '.') ?></td>
-                                <td>
-                                    <button class="btn" style="padding: 0.4rem; color: var(--primary)"><i class="fas fa-eye"></i></button>
-                                </td>
                             </tr>
                         <?php endwhile; ?>
                     <?php else: ?>
                         <tr>
-                            <td colspan="4" style="text-align: center; color: var(--text-muted); padding: 2rem;">Belum ada transaksi.</td>
+                            <td colspan="3" style="text-align: center; color: var(--text-muted); padding: 2rem;">Belum ada transaksi.</td>
                         </tr>
                     <?php endif; ?>
                 </tbody>

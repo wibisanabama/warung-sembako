@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     <?php endif; ?>
 
-    <div class="card fade-in" style="max-width: 600px; animation-delay: 0.1s">
+    <div class="card fade-in" style="animation-delay: 0.1s">
         <form action="" method="POST">
             <div class="form-group">
                 <label class="form-label">Pilih Produk</label>
